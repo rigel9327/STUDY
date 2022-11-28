@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+div{
+    width : 400px;
+    height: 400px;
+    background-color: aliceblue;
+    border : 4px gray solid;
+    border-radius: 10px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: -10px;
+}
+#ID{
+    text-align: center;
+}
+#PW{
+    text-align: center;
+}
+#PW2{
+    text-align: center;
+}
+#name{
+    width : 120px;
+}
+#phoneNum{
+    width : 45px;
+    height: 13px;
+    text-align: center;
+}

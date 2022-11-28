@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reg_member.css">
+    <script src="reg_member.js"></script>
+</head>
+
+<body>
+  
+    <h1>회원가입</h1>
+  
+    <div>
+        
+            아이디 : <input id="ID" type="text" minlength="4" maxlength="12" required placeholder="4자리 이상, 12자리 이하" onchange="idCheck();"><br><br>
+            비밀번호 : <input id="PW" type="password" minlength="8" maxlength="12" required placeholder="8자리 이상, 12자리 이하" onchange="pwCheck();"><br><br>
+            비밀번호 확인 : <input id="PW2" type="password" minlength="8" maxlength="12" required placeholder="8자리 이상, 12자리 이하" onchange="pw2Check();"><br><br>
+            이름 : <input id="name" type="text" minlength="2" maxlength="12" onchange="nameCheck();"><br><br>
+            이메일 : <input id="mail" type="email" minlength="8" maxlength="12" required placeholder="ex)abcd1234@naver.com" onchange="mailCheck();"><br><br>
+            생년월일 :
+            Year : <select id="select_year" onchange="lastday()"></select>
+            Month : <select id="select_month" onchange="lastday()"></select>
+            Day : <select id="select_day"></select><br><br>
+            성별 : <input type="radio" name="sex" value="M">남성
+            <input type="radio" name="sex" value="G" checked>여성<br><br>
+            핸드폰 번호 : <input type="tel" id="phoneNum" value="010">-<input type="tel" id="phoneNum" minlength="4"
+                maxlength="4" onchange="phoneNum();">-<input type="tel" id="phoneNum" minlength="4" maxlength="4" onchange="phoneNum();"><br><br>
+            <button id="signUp" onclick="signUp();">회원가입</button>
+        
+    </div>
+</body>
+
+</html>
